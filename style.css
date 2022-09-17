@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+/* header{
+    display: flex;
+    flex-direction: column;
+} */
+
+body {
+    background-color: #212121;
+    color: #fff;
+}
+
+section{
+    padding: 5rem;
+    margin: 0 auto;
+
+}
+
+.hero {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+    overflow: hidden; 
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  overflow: auto;
+  margin: 0 auto;
+  padding: 15px 120px;
+  align-items: center;
+  justify-content: space-between;
+  height: 20%;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: red;
+}
+
+/* .detel{
+    margin-left: 2rem;
+} */
+.detel h1 {
+  font-size: 50px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+span {
+  color: orange;
+}
+
+.detel p {
+  color: #f1f1f1;
+  line-height: 22px;
+}
+
+.detel a {
+  background: rgb(125, 0, 0);
+  padding: 10px 18px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  display: inline-block;
+  margin: 30px 0;
+  border-radius: 5px;
+  transition: all 500ms;
+}
+
+.detel a:hover{
+    border: 0.5px solid rgb(125, 0, 0);
+    background: none;
+    color: #f1f1f1;
+}
+
+.hero .images {
+  position: relative;
+  width: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.images .shape {
+    position: absolute;
+    top: 20px;
+    left: -39px;
+    transform: rotate(191deg);
+}
+
+.images .xandie {
+    z-index: 1;
+}
+
+/* 
+.images img{
+    height: 100;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition:bottom 1s, left 1s;
+}
+.images:hover.shape{
+    bottom: 40px;
+    size: 80px;
+}
+.images:hover.xandie{
+     left: 45px;
+     size: 60px;
+} */
+main{
+    height: 80vh;
+    width: 80pt;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.sandy_pic{
+    width: 100px;
+    display: block;
+    border-radius: 50%;
+    size: 2px;
+    height: auto;
+    background-size:60px;
+    filter: grayscale(100%);
+}
+
+.about{
+    display: flex;
+    flex: 1;
+    gap: 15px;
+    justify-content: space-between;
+}
+
+.about img{
+    flex: 0.4;
+}
+
+.about .about_detail{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 0.6;
+    align-self: center;
+    justify-content: start;
+    margin-left: 5rem;
+}
+
+.about .about_detail h2{
+    font-size: 36px;
+}
+.about .about_detail h5{
+    font-size: 28px;
+}
+.about .about_detail button{
+    height: 2rem;
+    margin-top: 10px;
+    width: 20rem;
+    border-radius: 10px;
+    font-size: medium;
+}
+
+/* Cards */
+.cards{
+    display: flex;
+    gap: 10px;
+    position: relative;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-around;
+}
+
+@media (max-width: 450px) {
+    section{
+        padding: 1rem;
+    }
+    
+    .cards{
+        flex-direction: column;
+    }
+}
+
+.card{
+    width: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 2rem;
+    border: 1px solid;
+    border-radius: 2rem;
+}
+
+.card:hover{
+    background: #551a8b;
+}
+
+
+.card:hover a{
+    color: #f1f1f1;
+}
+
+
+.card img{
+    width: 3rem;
+}
+
+@media (max-width: 450px) {
+    nav{
+        visibility: hidden;
+    }
+
+    .hero{
+        flex-direction: column;
+        margin-top: 0;
+    }
+
+    .detel{
+        height: 32rem;
+        padding-left: 2rem;
+    }
+    
+    .images{
+        display: none !important;
+    }
+
+    .about{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about_detail{
+        margin-left: 0 !important;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .about_detail button{
+        margin-left: 25px;
+    }
+
+    .service h1{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+}
+
