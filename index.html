@@ -4,107 +4,338 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Personal Portfolio</title>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .row::after{
+        content: '';
+        clear: both;
+        display: table;
+      }
+    </style>
+    <title>XAndie BLOG</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet"  href="https://fonts.googleapis.com/css?family=Tangerine">>
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Hire Me</a></li>
-        </ul>
-      </nav>
-      <div class="hero">
-        <div class="detel">
-          <h1>Hi I'm Sandra <span>Nvene</span></h1>
-          <p>
-            This is my Official Portfolio <br />Details of my work experience
-          </p>
-          <a href="https://www.linkedin.com/in/sandra-nvene/">Click me</a>
-        </div>
+    <!-- Header Section -->
+    <!-- Icon section -->
+    <header class="social__logo">
+      <div class="icon__logo">
+        <a href=""><i class="bx bxl-facebook"></i></a>
+        <a href=""><i class="bx bxl-twitter"></i></a>
+        <a href=""><i class="bx bxl-instagram"></i></a>
+        <a href=""><i class="bx bxl-pinterest"></i></a>
+      </div>
 
-        <div class="images">
-          <!-- <img src="/images/shape.png" class="shape"> -->
-          <img
-            src="./images/xandie.jpg "
-            class="xandie"
-            style="
-              border-top-right-radius: 13rem;
-              border-bottom-left-radius: 13rem;
-            "
-          />
-        </div>
+      <div>
+        <h1>XANDIE</h1>
+        <h4>A blog for decor lovers</h4>
+      </div>
+
+      <div class="icon__logo">
+        <a href=""><i class="bx bx-search"></i></a>
       </div>
     </header>
-    <div class="main">
-      <section class="about">
-        <img
-          src="./images/Sandy.jpg"
-          alt="sandy"
-          width="50px"
-          class="sandy_pic"
-        />
 
-        <div class="about_detail">
-          <h2>About ME</h2>
-          <h5>Developer & Designer</h5>
-          <p>
-            I am a front end developer and designer. I work with Html, Css and
-            JavaScript and I am also a UI/UX designer.<br />
-            I can design your project and provide clean perfect design. I can
-            also make your website to be more responsive with animations.<br />
-            A responsive design makes your website to be accesible to all
-            devices.
-          </p>
-          <button type="button">Let's Talk</button>
-        </div>
-      </section>
-      <!-- Service section start -->
-      <section class="service">
-        <h1>Our Services</h1>
+    <!-- Nav section -->
+    <nav class="nav__list container">
+      <ul>
+        <a href=""> <li>Home</li></a>
+       <a href=""> <li>Feature</li></a>
+       <a href=""> <li>Interior Decor</li></a>
+       <a href=""> <li>Travel</li></a>
+       <a href=""> <li>Shop</li></a>
+       <a href=""> <li>Download</li></a>
+      </ul>
+    </nav>
 
-        <!-- Card -->
-        <div class="cards">
-          <div class="card">
-            <img src="./images/icons8-bell-50.png" alt="card-bell" />
-            <h2>Web Development</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              exercitationem incidunt impedit, vitae ab aliquam nam aperiam
-              repellat sed est alias, assumenda saepe? Culpa quod natus minima
-              est, eum tempora.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="card">
-            <img src="./images/icons8-bell-50.png" alt="card-bell" />
-            <h2>UI/UX</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              exercitationem incidunt impedit, vitae ab aliquam nam aperiam
-              repellat sed est alias, assumenda saepe? Culpa quod natus minima
-              est, eum tempora.
-            </p>
-            <a href="#">Read More</a>
-          </div>
-          <div class="card">
-            <img src="./images/icons8-bell-50.png" alt="card-bell" />
-            <h2>App Design</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
-              exercitationem incidunt impedit, vitae ab aliquam nam aperiam
-              repellat sed est alias, assumenda saepe? Culpa quod natus minima
-              est, eum tempora.
-            </p>
-            <a href="#">Read More</a>
+    <!-- First card Section -->
+    <div class="nav__image">
+      <div class="card">
+        <img src="./images/dan-gold-4HG3Ca3EzWw-unsplash.jpg" alt="" />
+        <div class="image__text">
+          <div class="image__button">
+            <p>Italian Decor</p>
+            <button class="section__button">
+              <a
+                class="furniture"
+                href="https://www.luxurylinefurniture.com/payitaht-klasik-yatak-odasi"
+                target="_blank"
+                >Furnitures
+              </a>
+            </button>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="card">
+        <img src="./images/michael-warf-f8egRYt5RGk-unsplash.jpg" alt="" />
+        <div class="image__text">
+          <div class="image__button">
+            <p>Turkish Furnitures</p>
+            <button class="section__button">
+              <a
+                class="furniture"
+                href="https://www.luxurylinefurniture.com/payitaht-klasik-yatak-odasi"
+                target="_blank"
+                >Furnitures
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" alt="" />
+        <div class="image__text">
+          <div class="image__button">
+            <p>Made in China</p>
+            <button class="section__button">
+              <a
+                class="furniture"
+                href="https://www.luxurylinefurniture.com/payitaht-klasik-yatak-odasi"
+                target="_blank"
+                >Furnitures
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Second Section -->
+    <section class="card__container">
+      <div class="description">
+        <div class="card__description">
+          <u style="color: #18c5c5e2;">Interior Decor</u>
+          <h4>Italian Furnitures</h4>
+          <p>By Xandie-September 24, 2022</p>
+        </div>
+       <div class="card__section">
+        <img class="card__image" src="./images/sidekix-media-oCw5_evbWyI-unsplash.jpg" alt="" width="100%" height="400px">
+        Italy has held a prominent place in furniture design for centuries. What makes Italian furniture designs so sought after? This lesson will focus on the history and styles of Italian furniture.
+In the Beginning…
+Most of the earliest known pieces of Italian furniture were Roman adaptations of Greek designs. Bronze and wood furniture of the first century was found in the ruins of Pompeii and Herculaneum. Further evidence of early Italian furniture is found in paintings and carvings. Furniture frames were made of bronze or wood and accented with precious metals, tortoiseshell, and ivory details. The Romans developed a type of folding stool that was used by common folk and Roman officials alike. Round tables with curved legs shaped like animals were popular across the empire. Images of tables like this were found on tombstones depicting funerals. Many tables were made of citrus wood with shale or marble tops.
+
+During the 4th and 5th centuries, the Roman Empire fell. After this time, furniture was generally utilitarian in nature. Evidence of these pieces are primarily found in manuscripts, sculptures, and paintings. Plain tables and stools were typically used in kitchens, and storage cabinets had plain paneled doors. It is thought that turnery influenced the craftsmen of this period. Turnery is a method of using a lathe to shape pieces of furniture frames.
+       </div>
+
+       <button class="section__button" style="margin-top: 6rem; margin-left: 30rem;"><a class="furniture" href="#">Continue Reading</a></button>
+       
+       <div class="fashion">
+        <h6>14 COMMENTS</h6>
+
+        <p>SHARE:  
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-pinterest"></i></a></p>
+       </div>
+      </div>
+
+    
+      <!-- Side Card -->
+      <div class="side__card">
+        <div class="card mb-4" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles">About Me</h5>
+            <p class="card-text">Sandra Nvene is a Humanitatrian and Tech enthusiast, with a passion for interior design. She is mostly interested in Italian, Chinese, Turkish and Nigerian made designs</p>
+            
+          </div>
+        </div>
+        
+        <div class="card mb-4 text-center" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles">Follow Us</h5>
+           <div class="card-icon">
+           <div class="card__icon"><i class='bx bxl-facebook'></i> <br> Facebook</div>
+           <div class="card__icon"><i class='bx bxl-twitter'></i> <br> Twitter</div>
+           <div class="card__icon"><i class='bx bxl-instagram'></i> <br> Instagram</div>
+           <div class="card__icon"><i class='bx bxl-pinterest'></i> <br> Pinterest</div>
+           <div class="card__icon"><i class='bx bxl-github'></i> <br> Github</div>
+           <div class="card__icon"><i class='bx bxl-youtube'></i><br> YouTube</div>
+            
+           </div>
+           
+          </div>
+        </div>
+        
+        <div class="card mb-4 text-end" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles">Press</h5>
+            <div class="card3__section">
+            <div class="advert">
+              <h1>#1</h1>
+            <h5>Advertising</h5>
+            <h5>270X250</h5>
+            </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Third Section -->
+    <section class="card__container">
+      <div class="description">
+        <div class="card__description">
+          <u style="color: #18c5c5e2;">Interior Decor</u>
+          <h4>Turkish Furnitures</h4>
+          <p>By Xandie-September 24, 2022</p>
+        </div>
+       <div class="card__section">
+        <img class="card__image" src="./images/roberto-nickson-rEJxpBskj3Q-unsplash.jpg" alt="" width="100%" height="400px">
+        Turkish furniture is reputed for having some of the highest quality in the world. It is primarily hand-carved and made from the finest natural wood. Turkish furniture, whether made for residential or commercial purposes, is the perfect depiction of oriental mastery. It is unsurprising, therefore, that Turkish furniture is the most sought after worldwide. In this article, we would be taking a look at two spectrums of the finest furniture made in turkey. On the one hand, have commercial furniture specifically crafted to suit the business spaces and suites. And on the other, we examine the residential furniture versions crafted to add aesthetics to the home space.
+Commercial Furniture
+Commercial furnitures produced in Turkey is also known as contract-grade. It is made to fit public standards. Due to their usage, commercial furniture is found in hotels, restaurants, bars, and other public places requiring people to sit. In this regard, commercial furniture is known to be sturdy and safe for patronage. Commercial Furniture, like hotel furniture made in turkey, is designed to meet the high standards of the Turkish industry. First, Turkish commercial furniture is reputed for being able to stand the test of time. Also, they contain excellent materials that cement their reputation as one of the finest in the world. Finally, the materials are deliberately built to maintain a sturdy frame for rough usage that comes with commercial use.
+       </div>
+
+       <button class="section__button" style="margin-top: 6rem; margin-left: 30rem;"><a class="furniture" href="#">Continue Reading</a></button>
+       
+       <div class="fashion">
+        <h6>14 COMMENTS</h6>
+
+        <p>SHARE:  
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-pinterest"></i></a></p>
+       </div>
+      </div>
+
+    
+      <!-- Side Card -->
+      <div class="side__card">
+        <div class="card mb-4" style="max-width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles"> LABELS</h5>
+            <p class="card-text"> 
+
+             <a href="#"><li>Lifestyle</li></a>
+           <a href="#"><li>Features</li></a>
+          <a href="#"><li>Interior Decor</li></a>
+       <a href="#"><li>Travel</li></a>
+      <a href="#"><li>Shop</li></a>
+    </p>
+            
+          </div>
+        </div>
+        
+        <div class="card mb-4 text-center" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles">Follow Us</h5>
+           <div class="card-icon">
+           <div class="card__icon"><i class='bx bxl-facebook'></i> <br> Facebook</div>
+           <div class="card__icon"><i class='bx bxl-twitter'></i> <br> Twitter</div>
+           <div class="card__icon"><i class='bx bxl-instagram'></i> <br> Instagram</div>
+           <div class="card__icon"><i class='bx bxl-pinterest'></i> <br> Pinterest</div>
+           <div class="card__icon"><i class='bx bxl-github'></i> <br> Github</div>
+           <div class="card__icon"><i class='bx bxl-youtube'></i><br> YouTube</div>
+            
+           </div>
+           
+          </div>
+        </div>
+        
+        <div class="card mb-4 text-end" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-titles">Press </h5>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+
+                <div class="card">
+                  <img src="./images/dan-gold-4HG3Ca3EzWw-unsplash.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Italian Furniture</h5>
+                    <p class="card-text"> By Xandie-September 24, 2022</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Turkish Furnitures</h5>
+                    <p class="card-text">By Xandie-September 24, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/sidekix-media-5O-KFVmKSjY-unsplash.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Made in China</h5>
+                    <p class="card-text">By Xandie- September 24, 2022</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="./images/naomi-hebert-MP0bgaS_d1c-unsplash.jpg" class="card-img-top" alt="">
+                  <div class="card-body">
+                    <h5 class="card-title">Made in Nigeria</h5>
+                    <p class="card-text">By Xandie-September 24, 2022</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="card3__section"> -->
+              
+            
+            </div>
+            
+          </div>
+        </div>
+      </div>
+     </section>
+
+    <!-- this is a footer -->
+    <footer class="card-group">
+      <div class="card">
+        <div class="card-body bg-secondary">
+          <h5 class="card-title">About Us</h5>
+          <p class="card-text" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Xandie is a Tech enthusiast and  professional who enjoys writing useful content  for lovers of Interior decoration. she’s a contributing writer at Forbes, Entrepreneur, Inc, and Business Insider.</p>
+          
+        </div>
+      </div>
+      <div class="card bg-secondary">
+        <div class="card-body ">
+          <h5 class="card-titled">CONTACT</h5>
+         <div class="footer__icon">
+          <i class='bx bxs-envelope'>: hsdhjfdhjfdjh</i> <br>
+          <i class='bx bxs-phone'>: 1223 444 67888</i> <br>
+          <i class='bx bxs-home'>: hjshjfd kfgkgklg dfnfdjhgd</i>
+         </div>
+
+        
+        </div>
+      </div>
+      <div class="card bg-secondary">
+        <div class="card-body">
+          <h5 class="card-title">FOLLOW US</h5>
+          <a href=""><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram"></i></a>
+          <a href=""><i class="bx bxl-pinterest"></i></a></p>
+          <p class="card-text"></p>
+          <p class="card-text"><small class="text-muted"></small></p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
